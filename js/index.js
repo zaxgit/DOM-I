@@ -41,6 +41,28 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//nav
+let nav = document.querySelectorAll("a");
+nav[1].textContent = siteContent.nav["nav-item-1"]
+nav[2].textContent = siteContent.nav["nav-item-2"]
+nav[3].textContent = siteContent.nav["nav-item-3"]
+nav[4].textContent = siteContent.nav["nav-item-4"]
+nav[5].textContent = siteContent.nav["nav-item-5"]
+nav[6].textContent = siteContent.nav["nav-item-6"]
+
+//cta
+// cta
+let awesome = document.querySelector("h1");
+awesome.textContent = (siteContent.cta["h1"]);
+
+let button = document.querySelector("button");
+button.textContent = (siteContent.cta["button"]);
+
+let codeSnip = document.getElementById("cta-img");
+codeSnip.src = (siteContent.cta["img-src"]); 
+
+// main content
+
 let ContentHeaders = document.querySelectorAll("h4");
 ContentHeaders[0].textContent = siteContent["main-content"]["features-h4"];
 ContentHeaders[1].textContent = siteContent["main-content"]["about-h4"];
