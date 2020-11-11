@@ -40,3 +40,28 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ContentHeaders = document.querySelectorAll("h4");
+ContentHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+ContentHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+ContentHeaders[2].textContent = siteContent["main-content"]["services-h4"];
+ContentHeaders[3].textContent = siteContent["main-content"]["product-h4"];
+ContentHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+// contact h4
+ContentHeaders[5].textContent = siteContent.contact["contact-h4"];
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let contentP = document.querySelectorAll("p");
+contentP[0].textContent = siteContent["main-content"]["features-content"];
+contentP[1].textContent = siteContent["main-content"]["about-content"];
+contentP[2].textContent = siteContent["main-content"]["services-content"];
+contentP[3].textContent = siteContent["main-content"]["product-content"];
+contentP[4].textContent = siteContent["main-content"]["vision-content"];
+//contact
+contentP[5].textContent = siteContent.contact.address;
+contentP[6].textContent = siteContent.contact.phone;
+contentP[7].textContent = siteContent.contact.email;
+//footer
+contentP[8].textContent = siteContent.footer.copyright;
